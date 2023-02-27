@@ -1,2 +1,24 @@
-# recipe-app
-This is a Ruby on Rails web app where a user can post their recipe and foods, and can decide to share it in public or make it private
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
