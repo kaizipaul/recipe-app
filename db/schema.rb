@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_28_105815) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_28_180420) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "foods", force: :cascade do |t|
     t.string "name"
     t.string "measurement_unit"
-    t.float "price"
+    t.decimal "price"
     t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -29,18 +29,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_105815) do
     t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "recipe_id", null: false
     t.bigint "food_id", null: false
+    t.bigint "recipe_id", null: false
     t.index ["food_id"], name: "index_recipe_foods_on_food_id"
     t.index ["recipe_id"], name: "index_recipe_foods_on_recipe_id"
   end
 
   create_table "recipes", force: :cascade do |t|
     t.string "name"
-    t.float "preparation_time"
-    t.float "cooking_time"
+    t.integer "preparation_time"
+    t.integer "cooking_time"
     t.text "description"
-    t.boolean "public", default: false
+    t.boolean "public"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
@@ -48,14 +48,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_105815) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "name"
+    t.string "role", default: "user"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
