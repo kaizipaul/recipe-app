@@ -3,4 +3,4 @@
   <button type="button" class="add_btn btn"><%= link_to "Add new food", new_food_path %></button>
   <% @recipes.each do |recipe| %>
     <h2 class="recipe_name"><%= recipe.name %></h2>
-    <p class="recipe_desc"><%= truncate(recipe.description, length: 20, omission: "...") %></p> 
+    <p class="recipe_desc"><%= truncate(recipe.description, length: 20, omission: "...") %></p>

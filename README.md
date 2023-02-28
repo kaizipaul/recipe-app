@@ -11,7 +11,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-- [Diagram](#diagram)   
+- [Diagram](#diagram)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -30,7 +30,7 @@
 # Recipe App <a name="about-project"></a>
 
 
-**Recipe App** keeps track of all your recipes and ingredients. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. 
+**Recipe App** keeps track of all your recipes and ingredients. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -110,8 +110,7 @@ To run the project, execute the following command:
 
 👤 **Chukwuma Paul Mosanya**
 
-- GitHub: [GitHub](https://github.com/blase147)
-- LinkedIn: [LinkedIn]()
+[GitHub](https://github.com/blase147) | [Twitter](https://twitter.com/ChukwumaMosanya) | [LinkedIn](https://www.linkedin.com/in/chukwuma-mosanya)
 
 👤 **Paul Kaizirege Vedasto**
 
