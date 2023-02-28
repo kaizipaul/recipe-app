@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   resources :foods, except: [:update] do
   end
-
+end
   # Defines the root path route ("/")
   # root "articles#index"
