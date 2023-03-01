@@ -5,15 +5,14 @@
     <%= link_to recipe_path(id: recipe.id) do%>
         <div class="recipes-title">
           <h2><%= recipe.name %></h2>
-          <span><%= recipe.user.name %></span>
           <span class="recipes-by"> by <%= recipe.user.name %></span>
         </div>
-        <div>
         <div class="recipes-features">
           <p>Total food items: <%= @public_recipes.count %></p>
           <p>Total price: <%= @public_recipes.count %></p>
         </div>
-</ul>
+    <% end %>
+  <% end %>
 
 <div class="list_btn">
     <button class="recipe_btn"><%= link_to "Add Recipe", new_recipe_path %></button>

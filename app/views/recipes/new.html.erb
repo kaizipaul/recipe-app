@@ -1,6 +1,6 @@
 <div class="recipes-container">
 <h1>New Recipe</h1>
-<div class="new_user">
+<div class="new_user">  
   <%= form_with model: @recipe, url: recipes_path, local: true do |f| %>
     <div>
       <%= f.label :name, 'Recipe name', style: "display: block" %>
