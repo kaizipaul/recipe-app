@@ -9,11 +9,14 @@ class FoodsController < ApplicationController
   end
 
   def show; end
+
   def new
     @food = Food.new
     puts "Recipe #{params[:recipe_id]}"
   end
+
   def edit; end
+
   def create
     @food = Food.new(food_params)
     @food.user = @user
@@ -33,6 +36,7 @@ class FoodsController < ApplicationController
       end
     end
   end
+
   def update
     respond_to do |format|
       if @food.update(food_params)
@@ -44,6 +48,7 @@ class FoodsController < ApplicationController
       end
     end
   end
+
   def destroy
     food_recipes_count = RecipeFood.where(food_id: @food.id).count
     respond_to do |format|
@@ -58,13 +63,17 @@ class FoodsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
   private
+
   def find_user
     @user = current_user
   end
+
   def set_food
     @food = Food.find(params[:id])
   end
+
   def food_params
     params.require(:food).permit(:name, :measurement_unit, :price, :quantity, :user_id)
   end

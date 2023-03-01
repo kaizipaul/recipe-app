@@ -15,6 +15,7 @@ class RecipesController < ApplicationController
   def new
     @recipe = Recipe.new
   end
+
   def create
     @recipe = Recipe.new(recipe_params)
     @recipe.user = @user
@@ -25,10 +26,12 @@ class RecipesController < ApplicationController
       render :new, status: 400
     end
   end
+
   def edit
     @food = Food.find_by_id(params[:id])
     @recipe = Recipe.find(params[:id])
   end
+
   def update
     @food = Food.find_by_id(params[:id])
     @recipe = Recipe.find(params[:id])
@@ -64,10 +67,13 @@ class RecipesController < ApplicationController
     end
     redirect_to recipe_path(id: @recipe.id)
   end
+
   private
+
   def find_user
     @user = current_user
   end
+
   def recipe_params
     params.require(:recipe).permit(:name, :description, :preparation_time, :cooking_time, :public)
   end
