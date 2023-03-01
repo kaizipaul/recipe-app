@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :recipe_foods, as: 'foods'
     # resources :shopinglists
   end
-  resources :public_recipes
+  resources :public_recipes  
   post 'toggle_public', to: 'recipes#toggle'
 
 

@@ -3,7 +3,7 @@
 <%= button_to "Toggle", toggle_public_path(id: @recipe.id), method: :post  %>
 
 <div class="recipes-features">
-<p>Preparation Time: <%= @recipe.preparation_time %> hours</p>
+<p>Preparation Time: <%= @recipe.preparation_time %> hours</p> 
 <p>Cooking Time: <%= @recipe.cooking_time %> hours</p>
 <!-- <p>Public: <%= @recipe.public? ? 'Yes' : 'No' %></p> -->
 
@@ -21,10 +21,6 @@
     <% end %>
   </p>
 <% end %>
-</div>
-
-<div class="back_food">
-<%= link_to "generate shooping list", shoppinglist_index_path(recipe_id: @recipe.id), class:"food_btn" %>
 </div>
 
 <div class="recipes-container">
