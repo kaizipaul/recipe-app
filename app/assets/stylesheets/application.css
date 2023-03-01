@@ -20,6 +20,7 @@ html {
   margin: 0;
   outline: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -184,6 +185,7 @@ header {
 nav {
   background-color: var(--grey);
 }
+
 ul {
   display: flex;
   justify-content: center;
@@ -372,6 +374,7 @@ h1 {
 .back_food .food_btn:hover {
   box-shadow: 3px 3px 4px 1px #0e0e0e9e;
 }
+
 .recipe {
   display: flex;
   flex-direction: column;
@@ -425,6 +428,7 @@ h1 {
   padding: 1rem;
   border-top: 1px solid var(--grey);
 }
+
 .recipes-by {
   font-style: italic;
   font-size: 1.2rem;
@@ -460,6 +464,7 @@ h1 {
 .recipes-features .remove_btn {
   background-color: var(--red);
 }
+
 .recipes-features form {
   display: flex;
   flex-direction: column;
@@ -510,6 +515,7 @@ h1 {
   font-weight: bold;
   line-height: 3rem;
 }
+
 .shoppinglist {
   display: grid;
   grid-template-columns: 4fr 3fr 2fr 1fr;

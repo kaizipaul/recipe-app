@@ -37,9 +37,7 @@ class RecipeFoodsController < ApplicationController
 
   def update
     @recipe_food = RecipeFood.find_by_id(params[:id])
-
-  def create
-  end @recipe_food.quantity = params[:quantity]
+    @recipe_food.quantity = params[:quantity]
     if @recipe_food.save
       redirect_to recipe_path(@recipe), notice: 'Recipe Food was updated successfully'
     else
@@ -47,6 +45,7 @@ class RecipeFoodsController < ApplicationController
       render :edit, status: 400
     end
   end
+
   def create
     @recipe_food = RecipeFood.new(recipe_food_params)
     @recipe_food.recipe = @recipe
@@ -74,15 +73,19 @@ class RecipeFoodsController < ApplicationController
   end
 
   private
+
   def find_user
     @user = current_user
   end
+
   def find_recipe
     @recipe = Recipe.find_by_id(params[:recipe_id])
   end
+
   def find_food
     @food = Food.find_by_id(params[:food_id])
   end
+
   def recipe_food_params
     params.require(:recipe_food).permit(:quantity, :recipe_id, :food_id)
   end
