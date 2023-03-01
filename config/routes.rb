@@ -6,6 +6,16 @@ Rails.application.routes.draw do
     resources :recipe_foods, as: 'foods'
     # resources :shopinglists
   end
-end
-  # resources :public_recipes
-  # post 'toggle_public', to: 'recipes#toggle'
+  resources :public_recipes
+  post 'toggle_public', to: 'recipes#toggle'
+
+
+  resources :foods
+
+  resources :shoppinglist, only: %i[index]
+
+  # Defines the root path route ("/")
+  # root "articles#index"
+
+  root "recipes#index"
+  end
