@@ -7,10 +7,12 @@
   --white: #fff;
   --principalFont: 'Montserrat', sans-serif;
 }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
 *,
 *::before,
 *::after {
@@ -22,11 +24,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 p,
 ul {
   padding: 0;
   margin: 0;
 }
+
 img {
   width: 100%;
   height: auto;
@@ -48,18 +52,22 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
+
 .desk,
 .hide {
   display: none;
 }
+
 @media (min-width: 768px) {
   .desk {
     display: block;
   }
+
   .mob {
     display: none;
   }
 }
+
 .flash-notice,
 .flash-alert {
   padding: 2rem;
@@ -68,6 +76,7 @@ body {
   font-style: italic;
   font-size: 1.2rem;
 }
+
 .new_user {
   display: flex;
   flex-direction: column;
@@ -81,10 +90,12 @@ body {
   border-radius: 0.5rem;
   margin-bottom: 3rem;
 }
+
 .new_user input {
   width: 100%;
   padding: 0.5rem;
 }
+
 .new_user textarea {
   height: 60px;
   width: 100%;
@@ -109,6 +120,7 @@ body {
   width: 100%;
   text-align: center;
 }
+
 .user_links {
   display: flex;
   flex-direction: column;
@@ -117,6 +129,7 @@ body {
   font-style: italic;
   font-size: 1.2rem;
 }
+
 .recipe_btn_gen {
   background-color: var(--green);
   padding: 5px 14px;
@@ -127,17 +140,21 @@ body {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
+
 .recipe_btn_gen:hover {
   box-shadow: 3px 3px 4px 1px #0e0e0e9e;
 }
+
 em {
   font-size: 1rem;
 }
+
 /* --------header--------- */
 header {
   width: 100%;
   background-color: var(--white);
 }
+
 .banner {
   background-image: url("images/back_mob.jpg");
   padding: 2rem;
@@ -149,11 +166,13 @@ header {
   justify-content: flex-end;
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .banner {
     background-image: url("images/back_desk.jpg");
   }
 }
+
 .banner h2 {
   font-size: 4rem;
   font-weight: bold;
@@ -161,6 +180,7 @@ header {
   color: var(--white);
   text-shadow: 0 4px 4px #000;
 }
+
 nav {
   background-color: var(--grey);
 }
@@ -169,24 +189,29 @@ ul {
   justify-content: center;
   padding: 0.5rem;
 }
+
 li {
   border-right: 1px solid var(--dark);
   padding: 0 2rem 0 2rem;
   text-align: center;
   list-style: none;
 }
+
 li:last-child {
   border: none;
 }
+
 li a:hover {
   text-decoration: underline;
 }
+
 /* -------container-------- */
 .container {
   width: 100%;
   background-color: var(--white);
   flex: 1;
 }
+
 .recipes-container {
   max-width: 70rem;
   margin: 0 3rem;
@@ -244,6 +269,7 @@ li a:hover {
     margin: 0 auto;
   }
 }
+
 h1 {
   font-size: 2.1rem;
   font-weight: bold;
@@ -255,18 +281,22 @@ h1 {
 .list .list_food {
   padding: 2rem 1rem;
 }
+
 .list .name {
   font-weight: bold;
 }
+
 .list .title {
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
 }
+
 @media (min-width: 768px) {
   .list .title {
     font-size: 1rem;
   }
 }
+
 .list_food_btn {
   background-color: var(--red);
   border: none;
@@ -278,12 +308,14 @@ h1 {
   width: 19px;
   cursor: pointer;
 }
+
 .list_btn {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
 @media (min-width: 768px) {
   .list_btn {
     justify-content: flex-end;
@@ -347,16 +379,19 @@ h1 {
   border-top: 1px solid var(--grey);
   border-bottom: 1px solid var(--grey);
 }
+
 .recipe .name {
   font-weight: bold;
   padding: 1.5rem;
   font-size: 1.5rem;
 }
+
 .list_recipe_p {
   border: 1px solid var(--grey);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
+
 .list_recipe_btn {
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
@@ -407,6 +442,7 @@ h1 {
   margin-bottom: 3rem;
   gap: 1rem;
 }
+
 .recipes-features .btn {
   background-color: var(--green);
   padding: 5px 14px;
