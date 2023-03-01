@@ -20,6 +20,7 @@ class FoodsController < ApplicationController
   def create
     @food = Food.new(food_params)
     @food.user = @user
+
     respond_to do |format|
       if @food.save
         if params[:recipe_id].nil?
@@ -51,6 +52,7 @@ class FoodsController < ApplicationController
 
   def destroy
     food_recipes_count = RecipeFood.where(food_id: @food.id).count
+
     respond_to do |format|
       if food_recipes_count.positive?
         format.html do
