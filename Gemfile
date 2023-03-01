@@ -5,8 +5,11 @@ ruby '3.1.3'
 
 gem 'dotenv-rails'
 
-# add devise
+# add devise/authentication
 gem 'devise'
+
+# add authorization
+gem 'cancancan'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
