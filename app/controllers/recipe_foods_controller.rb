@@ -37,7 +37,7 @@ class RecipeFoodsController < ApplicationController
 
   def update
     @recipe_food = RecipeFood.find_by_id(params[:id])
-@@ -42,12 +58,17 @@ def create
+@ -42,12 +58,17 @@ def create
   end
 
   def destroy
