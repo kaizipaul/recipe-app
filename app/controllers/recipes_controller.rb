@@ -45,11 +45,6 @@ class RecipesController < ApplicationController
 
   def destroy
     @recipe = Recipe.find(params[:id])
-<<<<<<< HEAD
-    @recipe.destroy
-    flash[:notice] = 'The recipe was successfully destroyed'
-    redirect_to recipes_path
-=======
     @recipe_foods = RecipeFood.where(recipe_id: @recipe.id)
     @recipe_foods.each(&:destroy)
     if @recipe.destroy
@@ -71,21 +66,15 @@ class RecipesController < ApplicationController
       flash[:alert] = @recipe.errors.full_messages.first
     end
     redirect_to recipe_path(id: @recipe.id)
->>>>>>> a690a7eb3e76b2e783ca3c2e3de2ec334cd54b52
   end
 
   private
 
-<<<<<<< HEAD
-  def params_recipe
-    params.require(:recipe).permit(:name, :preparation_time, :description, :public, :cooking_time)
-=======
   def find_user
     @user = current_user
   end
 
   def recipe_params
     params.require(:recipe).permit(:name, :description, :preparation_time, :cooking_time, :public)
->>>>>>> a690a7eb3e76b2e783ca3c2e3de2ec334cd54b52
   end
 end
