@@ -13,15 +13,15 @@ RSpec.describe 'Recipes Page', type: :system do
       fill_in 'user_password', with: 'password'
       click_button 'Log in'
       sleep(2)
-      visit recipes_path
+      visit public_recipes_path
     end
 
     it 'displays the name of recipe' do
       expect(page).to have_content(@recipe.name)
     end
 
-    it 'displays the description of recipe' do
-      expect(page).to have_content(@recipe.description)
+    it 'displays the name of the user' do
+      expect(page).to have_content(@user.name)
     end
 
     it 'displays a button with text Add Recipe' do
@@ -31,11 +31,6 @@ RSpec.describe 'Recipes Page', type: :system do
     it 'button redirects to a page to add new recipe' do
       click_link 'Add Recipe'
       expect(page).to have_current_path new_recipe_path
-    end
-
-    it 'displays buttons with text Delete and Details' do
-      expect(page).to have_content('Delete')
-      expect(page).to have_content('Details')
     end
   end
 end
