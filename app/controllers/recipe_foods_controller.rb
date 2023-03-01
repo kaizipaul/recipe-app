@@ -37,7 +37,25 @@ class RecipeFoodsController < ApplicationController
 
   def update
     @recipe_food = RecipeFood.find_by_id(params[:id])
-@ -42,12 +58,17 @@ def create
+
+  def create
+  end @recipe_food.quantity = params[:quantity]
+    if @recipe_food.save
+      redirect_to recipe_path(@recipe), notice: 'Recipe Food was updated successfully'
+    else
+      flash.now[:alert] = @recipe_food.errors.full_messages.first if @recipe_food.errors.any?
+      render :edit, status: 400
+    end
+  end
+  def create
+    @recipe_food = RecipeFood.new(recipe_food_params)
+    @recipe_food.recipe = @recipe
+    if @recipe_food.save
+      redirect_to recipe_path(@recipe), notice: 'Recipe Food created successfully'
+    else
+      flash.now[:alert] = @recipe_food.errors.full_messages.first if @recipe_food.errors.any?
+      render :new, status: 400
+    end
   end
 
   def destroy
