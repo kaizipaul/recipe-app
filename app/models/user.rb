@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true, length: { in: 2..250 }
 
-  # fuction bnao admin ka
+  # Add admin role
   def admin?
     role == 'admin'
   end
