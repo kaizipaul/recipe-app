@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :recipe_foods, as: 'foods'
     # resources :shopinglists
   end
-  resources :public_recipes, only: [:index]  
+  resources :public_recipes
   post 'toggle_public', to: 'recipes#toggle'
 
 
@@ -17,5 +17,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  root "recipes#index"
+  get '/unauthorized', to: 'unauthorized#index'
+
+  root "foods#index"
   end
