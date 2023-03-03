@@ -227,7 +227,7 @@ li a:hover {
 .recipes-container h2 {
   font-size: 1.5rem;
   padding: 1rem;
-  font-weight: semi-bold;
+  font-weight: 600;
 }
 
 .recipes_container_list {
