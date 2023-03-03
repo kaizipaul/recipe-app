@@ -5,11 +5,12 @@
   <% @public_recipes.each do |public_recipe| %>
     <%= link_to recipe_path(id: public_recipe.id) do%>
       <li>
+      <div class="sub_public_recipes_container">
         <div>
           <h2><%= public_recipe.name %></h2>
-          <span><%= public_recipe.user.name %></span>
+          <span>By: <%= public_recipe.user.name %></span>
         </div>
-        <div>
+        <div class="public_recipes_total_food_price">
           <p>Total food items: <%= public_recipe.recipe_foods.count %></p>
           <p>Total Price
             <% total_price = 0 %>
@@ -18,6 +19,7 @@
             <% end %>
             <%= total_price %>
           </p>
+        </div>
         </div>
       </li>
     <% end %>

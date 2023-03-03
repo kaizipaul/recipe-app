@@ -261,6 +261,11 @@ li a:hover {
   grid-template-columns: 3fr 2fr 2fr 2fr;
 }
 
+.recipes_shopping_container {
+  display: flex;
+  justify-content: center;
+}
+
 .list {
   display: grid;
   grid-template-columns: 4fr 3fr 2fr 1fr;
@@ -270,6 +275,26 @@ li a:hover {
 
 .recipes_container_list .list {
   grid-template-columns: 3fr 2fr 2fr 2fr;
+  gap: 20px;
+}
+
+.public_recipes_container {
+  display: flex;
+  align-items: center;
+  align-content: baseline;
+  flex-direction: column;
+  gap:10px;
+}
+
+.sub_public_recipes_container {
+  display: flex;
+  gap: 20px;
+  border: 2px solid black;
+  padding: 10px 10px;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+
 }
 
 @media (min-width: 768px) {
@@ -313,7 +338,6 @@ h1 {
   font-weight: bold;
   font-size: 1.4rem;
   border-radius: 1.5rem;
-  width: 19px;
   cursor: pointer;
 }
 
@@ -361,11 +385,20 @@ h1 {
   justify-content: end;
 }
 
+.back_food_list_btn{
+  display: flex;
+  flex-direction: row;
+}
+
 .back_food {
   display: flex;
   padding: 1rem;
   gap: 2rem;
-  justify-content: flex-end;
+  justify-content: left;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 6.5em;
 }
 
 .back_food .food_btn {
@@ -427,6 +460,8 @@ h1 {
   background-color: inherit;
   padding: inherit;
   border: none;
+    width: 15%;
+
 }
 
 .recipes-title {
