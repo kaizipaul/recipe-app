@@ -50,7 +50,7 @@
 
 ### Demo
 
-Click [here](https://recipe-app-nlre.onrender.com) to view our app
+Click [here](https://recipe-ruby.onrender.com) to view our app
 
 
 <!-- Features -->
