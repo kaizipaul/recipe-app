@@ -50,7 +50,7 @@
 
 ### Demo
 
-Click here to view our app [Demo](https://recipe-app-nlre.onrender.com)
+Click [here](https://recipe-app-nlre.onrender.com) to view our app
 
 
 <!-- Features -->
