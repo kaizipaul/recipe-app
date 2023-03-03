@@ -32,7 +32,7 @@
         <li><%= food.name %></li>
         <li><%= food.measurement_unit %></li>
         <li><%= food.price %></li>
-        <li><%= link_to image_tag("select.png"), recipe_foods_path(recipe_id: @recipe.id, food_id: food.id) %></li>
+        <li><%= link_to image_tag("edit.png"), recipe_foods_path(recipe_id: @recipe.id, food_id: food.id) %></li>
       </ul>
     <% end %>
   </section>
