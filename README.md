@@ -110,7 +110,9 @@ To run the project, execute the following command:
 
 👤 **Chukwuma Paul Mosanya**
 
-[GitHub](https://github.com/blase147) | [Twitter](https://twitter.com/ChukwumaMosanya) | [LinkedIn](https://www.linkedin.com/in/chukwuma-mosanya)
+- [GitHub](https://github.com/blase147)
+- [Twitter](https://twitter.com/ChukwumaMosanya)
+- [LinkedIn](https://www.linkedin.com/in/chukwuma-mosanya)
 
 👤 **Paul Kaizirege Vedasto**
 
