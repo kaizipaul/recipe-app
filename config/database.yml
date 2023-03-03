@@ -90,5 +90,7 @@ test:
 production:
   <<: *default
   database: recipe_app
-  username: <%= ENV['USER_NAME'] %>
-  password: <%= ENV['PASSWORD'] %>
+  host: localhost
+  port: 5432
+  username: postgres
+  password: kaizi1299
