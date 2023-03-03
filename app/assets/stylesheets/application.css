@@ -283,7 +283,7 @@ li a:hover {
   align-items: center;
   align-content: baseline;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
 
 .sub_public_recipes_container {
@@ -294,7 +294,6 @@ li a:hover {
   align-items: center;
   justify-content: left;
   text-align: left;
-
 }
 
 @media (min-width: 768px) {
@@ -385,7 +384,7 @@ h1 {
   justify-content: end;
 }
 
-.back_food_list_btn{
+.back_food_list_btn {
   display: flex;
   flex-direction: row;
 }
@@ -460,8 +459,7 @@ h1 {
   background-color: inherit;
   padding: inherit;
   border: none;
-    width: 15%;
-
+  width: 15%;
 }
 
 .recipes-title {
