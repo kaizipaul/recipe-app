@@ -49,7 +49,9 @@
 ![Preview](./app/assets/images/recipe-app.png)
 
 ### Demo
-You can visit our page [here]
+
+Click here to view our app [Demo](https://recipe-app-nlre.onrender.com)
+
 
 <!-- Features -->
 
