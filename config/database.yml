@@ -91,5 +91,7 @@ production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
   database: recipe_app
+  host: localhost
+  port: 5432
   username: <%= ENV['USER_NAME'] %>
   password: <%= ENV['PASSWORD'] %>
