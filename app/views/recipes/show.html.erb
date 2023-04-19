@@ -31,8 +31,6 @@
     </div>
     <div class="list_btn">
       <button class="recipe_btn"><%= link_to 'Add ingredient', recipe_foods_path(recipe_id: @recipe.id) %></button>
-      <button type="button" class="recipe_btn"><%= link_to "Go to public recipes", public_recipes_path %></button>
-      <button class="recipe_btn"><%= link_to 'Edit', edit_recipe_path(id: @recipe.id), class: 'edit_btn' %></button>
     </div>
  </div>
 

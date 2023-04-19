@@ -48,11 +48,6 @@
 ### ERD Diagram <a name="diagram">
 ![Preview](./app/assets/images/recipe-app.png)
 
-### Demo
-
-Click [here](https://recipe-ruby.onrender.com) to view our app
-
-
 <!-- Features -->
 
 ### Key Features <a id="key-features"></a>
