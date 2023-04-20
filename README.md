@@ -143,6 +143,10 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project...
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thanks microverse for the support including educationl kits and idesa provided to maaking this project a sucess.
+
 <p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- FAQ (optional) -->
