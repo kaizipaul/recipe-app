@@ -141,7 +141,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project and want to support me make cooler projects Give this project a Star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thanks microverse for the support including educationl kits and idesa provided to making this project a sucess.
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
