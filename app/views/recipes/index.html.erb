@@ -5,7 +5,7 @@
     <div class="recipes-title">
       <h2 class="recipe_name"><%= link_to recipe.name, recipe_path(id: recipe.id) %></h2>
        <div class="list_btn">
-      <button type="button" class="remove_btn btn"><%= link_to "Remove", recipe_path(id: recipe.id), data: { turbo_method: :delete } %></button>
+      <button type="button" class="remove_btn btn"><%= link_to "Delete", recipe_path(id: recipe.id), data: { turbo_method: :delete } %></button>
     </div>
     </div>
     <div class="recipes-features">

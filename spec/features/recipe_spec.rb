@@ -33,9 +33,8 @@ RSpec.describe 'Recipes Page', type: :system do
       expect(page).to have_current_path new_recipe_path
     end
 
-    # it 'displays buttons with text Delete and Details' do
-    #   expect(page).to have_content('Delete')
-    #   expect(page).to have_content('Details')
-    # end
+    it 'displays button with text Delete' do
+      expect(page).to have_content('Delete')
+    end
   end
 end
